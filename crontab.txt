@@ -1,0 +1,4 @@
+#crontab -e to access and create a new crontab 
+# replace /home/ubuntu/firewall.py with your own specified path
+
+0 * * * * sudo python3 /home/ubuntu/firewall.py
