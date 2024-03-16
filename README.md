@@ -1,3 +1,5 @@
+# Auto UFW Script
+
 This Python script automatically blocks IP addresses that have failed SSH login attempts using the ufw firewall on Ubuntu. It reads failed SSH login attempts from the system journal and adds firewall rules to block these IP addresses.
 
 Instructions
