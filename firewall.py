@@ -10,7 +10,7 @@ j.log_level(journal.LOG_INFO)
 j.add_match(_SYSTEMD_UNIT="ssh.service")
 ip_addresses = set()
 
-for entry in j: # Read every entry in the journal
+for entry in j:
         message = entry["MESSAGE"]
         if message.startswith("Failed"):
                 ip_addresses.update(re.findall(r'\b(?:\d{1,3}\.){3}\d{1,3}\b', message))
